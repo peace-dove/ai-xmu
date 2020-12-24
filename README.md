@@ -72,11 +72,7 @@ graph LR
 ### 队伍分工
 
 > blankspace 鹅鹅鹅 
-
-范文瑾：文档书写、界面优化
-管韫之：功能实现
-把徐进：框架搭建
-
+keep a secret
 ### 联系
 
 个人主页 [github.com/peace-dove](github.com/peace-dove)
