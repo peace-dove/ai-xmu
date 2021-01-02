@@ -1,4 +1,6 @@
-# ai-xmu# 爱食堂 学科实践微信小程序
+# ai-xmu
+
+# 爱食堂 学科实践微信小程序
 
 ## by blank space
 
