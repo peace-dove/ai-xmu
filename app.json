@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/person/person",
+    "pages/text/text",
+    "pages/tucao/tucao",
+    "pages/liuyan/liuyan"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "爱食堂",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#444444",
+    "selectedColor": "#F7B52C",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/index-0.png",
+        "selectedIconPath": "static/index-1.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/text/text",
+        "iconPath": "static/hot-0.png",
+        "selectedIconPath": "static/hot-1.png",
+        "text": "推荐"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "iconPath": "static/tag-0.png",
+        "selectedIconPath": "static/tag-1.png",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "sitemapLocation": "sitemap16.json"
+}
