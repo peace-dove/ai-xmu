@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view>
+   <cu-custom vue-id="406149de-1" bgColor="light bg-orange" isBack="{{true}}" bind:__l="__l"
+      vue-slots="{{['backText','content']}}">
+      <view slot="backText">返回</view>
+      <view slot="content">留言板</view>
+   </cu-custom>
+   <!--留言-->
+   <view class="send-box">
+      <input bindinput="changeInputValue" class="input" type="text" value="{{inputVal}}" placeholder="输入评论"
+         placeholder-class="place-input" />
+      <button size="mini" class="tian" bindtap="addMsg">添加</button>
+   </view>
+   <!--留言列表-->
+   <text class="msg-info" wx:if="{{msgData.length==0}}">留言区空空如也哟</text>
+   <view class="list-view">
+      <view class="item" wx:for="{{msgData}}" wx:key="{{index}}">
+         <text class="text1">{{item.msg}}</text>
+         <!--button size="mini" plain class="close-btn" type="default">删除</button-->
+         <icon type="cancel" bindtap="DelMsg" data-index="{{index}}" class="close-btn" />
+      </view>
+   </view>
+   <view class='placeholder-view'></view>
+</view>

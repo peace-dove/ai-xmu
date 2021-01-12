@@ -1,0 +1,58 @@
+<view>
+  <cu-custom vue-id="8dd740cc-1" bgColor="light bg-orange" isBack="{{false}}" bind:__l="__l"
+    vue-slots="{{['backText','content']}}">
+    <view slot="backText">返回</view>
+    <view slot="content">爱食堂</view>
+  </cu-custom>
+  <view>
+    <view>
+      <swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}"
+        duration="{{duration}}" circular="{{circular}}" indicator-color="rgba(104, 177, 222, 0.3)"
+        indicator-active-color="rgba(255,0,0,0.8)">
+        <block wx:for="{{swiperList}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+          <swiper-item>
+            <image class="swiperimage" src="{{item.img}}" mode="aspectFit"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="cu-bar bg-white solid-bottom margin-top">
+      <view class="action"><text class="cuIcon-title text-blue"></text>吐槽</view>
+    </view>
+    <view class="padding bg-white">
+      <view class="cu-bar btn-group">
+        <navigator class="cu-btn text-lg line-yellow shadow" url="../tucao/tucao">积极留言</navigator>
+        <navigator class="cu-btn text-lg line-yellow shadow" url="../tucao/tucao">消极留言</navigator>
+        <navigator class="cu-btn text-lg line-yellow shadow" url="../tucao/tucao">我要吐槽</navigator>
+      </view>
+    </view>
+    <view class="cu-bar bg-white solid-bottom margin-top">
+      <view class="action"><text class="cuIcon-title text-blue"></text>开发进度</view>
+      <switch data-event-opts="{{[['change',[['SetActive',['$event']]]]]}}"
+        class="{{['margin-right-sm',active?'checked':'']}}" bindchange="__e"></switch>
+    </view>
+    <view class="padding bg-white">
+      <view class="{{['cu-progress radius sm striped',active?'active':'']}}">
+        <view class="bg-red" style="{{'width:'+(loading?'10%':'')+';'}}"></view>
+      </view>
+    </view>
+    <view class="cu-bar bg-white solid-bottom margin-top">
+      <view class="action"><text class="cuIcon-title text-blue"></text>任务分配</view>
+    </view>
+    <view class="padding bg-white">
+      <view class="cu-progress radius striped active">
+        <view class="bg-red" style="{{'width:'+(loading?'33%':'')+';'}}">33%</view>
+        <view class="bg-olive" style="{{'width:'+(loading?'33%':'')+';'}}">33%</view>
+        <view class="bg-cyan" style="{{'width:'+(loading?'34%':'')+';'}}">34%</view>
+      </view>
+    </view>
+    <view class="cu-bar bg-white solid-bottom margin-top">
+      <view class="action"><text class="cuIcon-title text-blue"></text>小组成员</view>
+    </view>
+    <view class="padding">
+      <view class="cu-avatar radius margin-left"><text>范</text></view>
+      <view class="cu-avatar radius margin-left"><text>管</text></view>
+      <view class="cu-avatar radius margin-left"><text>把</text></view>
+    </view>
+  </view>
+</view>

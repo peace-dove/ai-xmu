@@ -1,0 +1,56 @@
+
+.body {
+	/* background-color: #C8C7CC; */
+	width: 750rpx;
+	height: 1070rpx;
+}
+.box {
+	width: auto;
+	height: 100rpx;
+}
+.swiper {
+	margin: 0 auto;
+	height: 423rpx;
+}
+.swiperimage {
+	width: 750rpx;
+	height: 423rpx;
+}
+.threefast {
+	width: 730rpx;
+	height: 600rpx;
+	margin-top: 0auto;
+	border: 10rpx solid skyblue;
+	position: relative;
+
+	display: -webkit-box;
+
+	display: -webkit-flex;
+
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+}
+.text {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+
+	width: 150rpx;
+	height: 150rpx;
+	background-color: pink;
+	margin-left: 300rpx;
+	margin-right: 300rpx;
+	border: 5rpx solid pink;
+	border-style: outset;
+	position: absolute;
+}
+.box {
+	margin: 20rpx 0;
+}
+.box view.cu-bar {
+	margin-top: 20rpx;
+}
+
